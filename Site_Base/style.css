@@ -1,0 +1,193 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+:root{
+    --corPrimaria: yellow;
+    --corBackground: rgb(255, 255, 169);
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header_{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    color: white;
+
+    border-bottom: 2px solid white;
+}
+
+.title_header{
+    transition: all .5s;
+}
+
+.title_header:hover{
+    color: var(--corPrimaria);
+    cursor: pointer;
+
+    text-shadow: 5px 5px 25px var(--corPrimaria);
+}
+
+.menu_{
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    border-top: 2px solid white;
+}
+
+.menu_ li{
+    display: inline;
+}
+
+.menu_ a{
+    color: white;
+    text-decoration: none;
+
+    font-weight: 900;
+    padding: 1rem;
+
+    font-size: 2rem;
+
+    transition: all .5s;
+}
+
+
+.menu_ a:hover{
+    color: var(--corPrimaria);
+    filter: drop-shadow(7px 7px 10px var(--corPrimaria));
+}
+
+/* background */
+
+.bg_{
+    background-image: url(imgs/bg.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: calc(100vh - 60px);
+
+    position: absolute;
+    z-index: -2;
+
+    border-bottom: 2px solid white;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 200px);
+
+    padding: 1rem;
+
+    color: white;
+}
+
+.content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 1rem;
+
+    width: 30%;
+}
+
+.container video{
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: -3px 3px 5px 2px rgba(0,0,0,.4);
+
+    background-color: white;
+}
+
+.novidades{
+    margin-top: 8rem;
+    background-color: var(--corBackground);
+    height: 100vh;
+
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.nov_title{
+    text-align: center;
+    padding: 1rem;
+    background-color:rgba(0,0,0,.9);
+    border: 2px solid white;
+
+    border-radius: 12px;
+    box-shadow: -2px 2px 3px 1px rgba(0,0,0,.2);
+
+    margin-bottom: 2rem;
+
+    font-weight: 900;
+    font-size: 2rem;
+
+    text-decoration: underline;
+
+    color: white;
+}
+
+.novidades_content{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    margin: 4rem auto;
+
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.describe{
+    text-align: center;
+    color: black;
+}
+
+.btnJogue{
+    margin: auto;
+    background-color: black;
+
+    width: 200px;
+    text-align: center;
+    padding: 1rem;
+
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: -2px 2px 3px 1px rgba(0,0,0,.2);
+
+
+}
+
+.btnJogue a{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
